@@ -1,12 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
   padding: 0; margin: 0;
   box-sizing: border-box;
   user-select: none;
+  font-family: 'Inter';
 }
+
 html, body {
   overflow: hidden;
+  font-size: 16px;
 }
-#root {
-  height: 100vh; width: 100vw;
-  background-color: rgb(255, 132, 132);
+
+a {
+  text-decoration: none;
+}
+
+#root { height: 100vh; width: 100vw; }
+
+:root {
+  --gradient: linear-gradient(140deg, #89d7fe 0%, #378aff 100%);
+  --color1: #89d7fe;
+  --color2: #66a6ff;
+  --color3: #378aff;
+
+  --white: white;
+  --black: #0f0d15;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center; justify-content: center;
 }
