@@ -7,12 +7,13 @@ section#login-page {
 #login-container {
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     border-radius: 2rem;
     overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
 
     & form {
-        flex: 1;
+        width: 30rem;
         padding: 4rem;
         display: flex; flex-direction: column; gap: 1.4rem;
         color: white;
@@ -61,6 +62,7 @@ section#login-page {
         & #forgot-pwd { 
             cursor: pointer; 
             font-style: italic; 
+            width: fit-content;
         }
 
         & p {
@@ -75,8 +77,15 @@ section#login-page {
     }
     & #login-explain {
         background: var(--gradient);
-        /* background-color: var(--color2); */
+        width: 25rem;
         padding: 4rem;
-        flex: .6;
+        font-size: .8rem;
+        color: var(--black);
+        text-align: justify;
+
+        & h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
     }
 }

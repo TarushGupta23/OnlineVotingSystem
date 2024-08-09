@@ -12,9 +12,9 @@ html, body {
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
+ul { list-style: none; }
+ul::-webkit-scrollbar { display: none; }
 
 #root { height: 100vh; width: 100vw; }
 
@@ -26,9 +26,16 @@ a {
 
   --white: white;
   --black: #0f0d15;
+
+  --base-1: #0f0d15;
+  --base-2: #1d1a26;
+  --base-3: #2b2836;
+  --base-4: #3b3743;
+  --base-5: #4b4858;
 }
 
 .flex-center {
   display: flex;
   align-items: center; justify-content: center;
 }
+
