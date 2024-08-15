@@ -19,19 +19,24 @@ ul::-webkit-scrollbar { display: none; }
 #root { height: 100vh; width: 100vw; }
 
 :root {
-  --gradient: linear-gradient(140deg, #89d7fe 0%, #378aff 100%);
-  --color1: #89d7fe;
-  --color2: #66a6ff;
-  --color3: #378aff;
+  --saffron: #FF671F;
+  --white: #FFFFFF;
+  --green: #046A38;
+  --navy: #06038D;
+  
+  --black: #000000;
+  
+  --base-1: #000927;
+  --base-2: #0d1064;
+  --base-3: #292C6D;
+  --base-4: #F5F7F8;
 
-  --white: white;
-  --black: #0f0d15;
-
-  --base-1: #0f0d15;
-  --base-2: #1d1a26;
-  --base-3: rgb(17, 26, 42);
-  --base-4: #3b3743;
-  --base-5: #4b4858;
+  --blue-1: #0060fa;
+  --blue-2: #25baff;
+  --blue-3: #c2e9fb;
+  
+  --gradient: linear-gradient(140deg, var(--blue-1) 0%, var(--blue-2) 100%);
+  --gradient-i: linear-gradient(160deg, var(--saffron) 0%, var(--green) 100%);
 }
 
 .flex-center {
@@ -39,3 +44,31 @@ ul::-webkit-scrollbar { display: none; }
   align-items: center; justify-content: center;
 }
 
+.bgrd-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.gradient-btn {
+  cursor: pointer;
+  border: none; outline: none;
+  background: var(--bgrd);
+  padding: .1rem;
+  border-radius: 1000px;
+
+  & div {
+    background-color: var(--base-bgrd);
+    border-radius: 1000px;
+    padding: .4rem;
+    width: 100%;
+
+    & span {
+      background: var(--bgrd);
+      font-weight: bold;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}

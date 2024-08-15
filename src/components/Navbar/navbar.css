@@ -6,13 +6,12 @@ nav {
     z-index: 2;
     position: sticky;
     top: 0;
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: var(--base-1);
 
     & div.web-logo {
         height: 2rem; width: 6rem;
         margin: 1rem 0px;
-        background: var(--gradient);
+        background: var(--white);
         mask-image: url('./../../../public/icons/logo.png');
         -webkit-mask-image: url('./../../../public/icons/logo.png');
         
@@ -24,22 +23,13 @@ nav {
         -webkit-mask-position: center;
     }
 
-    & hr {
-        position: absolute;
-        width: 98%; height: 4px;
-        bottom: 0; left: 50%;
-        background: var(--gradient);
-        border: none; outline: none;
-        transform: translateX(-50%);
-    }
-
     & ul {
         display: flex; gap: 2rem;
         align-items: center; justify-content: center;
 
         & li { 
             cursor: pointer; 
-            background: var(--gradient);
+            background: var(--white);
         }
 
         & li.nav-page {

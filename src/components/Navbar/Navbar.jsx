@@ -12,6 +12,6 @@ export default function Navbar() {
             <li className='nav-icon' id='nav-notification'></li>
             <li className='nav-icon' id='nav-profile'></li>
         </ul>
-        <hr />
+        {/* <hr /> */}
     </nav>
 }
