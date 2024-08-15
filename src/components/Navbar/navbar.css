@@ -9,6 +9,21 @@ nav {
     backdrop-filter: blur(20px);
     background-color: rgba(0, 0, 0, 0.2);
 
+    & div.web-logo {
+        height: 2rem; width: 6rem;
+        margin: 1rem 0px;
+        background: var(--gradient);
+        mask-image: url('./../../../public/icons/logo.png');
+        -webkit-mask-image: url('./../../../public/icons/logo.png');
+        
+        mask-size: contain;
+        -webkit-mask-size: contain;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        mask-position: center;
+        -webkit-mask-position: center;
+    }
+
     & hr {
         position: absolute;
         width: 98%; height: 4px;

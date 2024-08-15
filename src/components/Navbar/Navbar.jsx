@@ -2,9 +2,7 @@ import './navbar.css'
 
 export default function Navbar() {
     return <nav>
-        <span>
-            <img src="icons/profile.png" alt="" />
-        </span>
+        <div className='web-logo' />
         <ul>
             <li className='nav-page'><a href='#'>Home</a></li>
             <li className='nav-page'><a href='#'>Cast Vote</a></li>

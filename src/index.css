@@ -29,7 +29,7 @@ ul::-webkit-scrollbar { display: none; }
 
   --base-1: #0f0d15;
   --base-2: #1d1a26;
-  --base-3: #2b2836;
+  --base-3: rgb(17, 26, 42);
   --base-4: #3b3743;
   --base-5: #4b4858;
 }
